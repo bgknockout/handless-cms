@@ -1,0 +1,17 @@
+{
+  "server": {
+    "port": 5000
+  },
+  "db": {
+    "dialect": "postgres",
+    "port": 5432,
+    "host": "localhost",
+    "database": "handlecms",
+    "username": "postgres",
+    "password": "postgres"
+  },
+  "security": {
+    "secretKey": "hAndl3CMS",
+    "expiresIn": "7d"
+  }
+}
