@@ -18,8 +18,8 @@ const sequelize = new Sequelize(uri)
 
 // Models
 const models: iModels = {
-  App: sequelize.import('./App'),
-  User: sequelize.import('./User'),
+  App: require('./App').default(sequelize, Sequelize),
+  User: require('./User').default(sequelize, Sequelize),
   sequelize
 }
 
