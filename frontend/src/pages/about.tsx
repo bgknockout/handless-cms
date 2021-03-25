@@ -1,3 +1,5 @@
-import React from 'react';
+import React from 'react'
 
-export default (): React.ReactNode => <h1>About Page</h1>
+const About = (): React.ReactNode => <h1>About Page</h1>
+
+export default About
