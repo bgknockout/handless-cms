@@ -11,8 +11,12 @@ export default withSass({
     autoPrerender: false
   },
   webpack: config => {
+    const dir = __dirname
     config.resolve.alias['@app'] = path.resolve(__dirname, './src/app')
     config.resolve.alias['@config'] = path.resolve(dir, './src/config')
+    config.resolve.alias['@contexts'] = path.resolve(dir, './src/contexts')
+    config.resolve.alias['@graphql'] = path.resolve(dir, './src/graphql')
+    config.resolve.alias['@interfaces'] = path.resolve(dir, './src/interfaces')
     config.resolve.alias['@pages'] = path.resolve(__dirname, './src/pages')
     config.resolve.alias['@shared'] = path.resolve(__dirname, './src/shared')
     config.resolve.alias.styles = path.resolve(__dirname, './src/shared/styles')
